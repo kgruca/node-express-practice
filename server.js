@@ -9,7 +9,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.use(express.json());
+app.use('/campsites', campsiteRouter);
 
 // app.get('/campsites/:campsiteId', (req, res) => {
 //     res.end(`Will send details of the campsite: ${req.params.campsiteId} to you`);
